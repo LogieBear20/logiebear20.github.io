@@ -14,14 +14,15 @@
 		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
 		<img id="crate" src="images/crate.jpg" crossorigin="anonymous" />
 		<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
-		<img id="space" src="images/space.jpg" crossorigin="anonymous" />
+		<img id="space" src="images/space.png" crossorigin="anonymous" />
 		<img id="moon" src="images/moon.jpg" crossorigin="anonymous" />
+		<img id="man" src="images/astronaut.png" crossorigin="anonymous" />
 		
 	</a-assets>
 		
 	<a-sky 
 		color = "#FFFFFF"
-		material = "src: #sky">
+		material = "src: #space">
 	</a-sky>
 
 	<a-plane
@@ -29,7 +30,7 @@
 		position=" 0.00 0.00 0.00" 
 		rotation="-90 0 0" 
 		color="#888888" 
-		material="src: #moon; repeat:10 10; transparent: true; opacity: 0.75"
+		material="src: #moon; repeat:10 10; transparent: true; opacity: 0 "
 		shadow="cast: false; receive: true">
 	</a-plane>
 	
@@ -38,7 +39,7 @@
 		position = "-1 0.5 -3"
 		rotation = "0 45 0"  
 		color = "#FFFFFF"
-		material = "src: #crate"
+		material = "src: #man"
 		shadow = "cast: true; receive: true">
 	</a-box>
 	
