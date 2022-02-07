@@ -18,6 +18,7 @@
 		<img id="moon" src="images/moon.jpg" crossorigin="anonymous" />
 		<img id="man" src="images/astronaut.png" crossorigin="anonymous" />
 		
+		<a-asset-item>
 	</a-assets>
 		
 	<a-sky 
@@ -30,12 +31,12 @@
 		position=" 0.00 0.00 0.00" 
 		rotation="-90 0 0" 
 		color="#888888" 
-		material="src: #moon; repeat:10 10; transparent: true; opacity: 0 "
+		material="src: #moon; repeat:10 10; transparent: true; opacity: 100 "
 		shadow="cast: false; receive: true">
 	</a-plane>
 	
 	<a-box
-		width = "1" height = "5" depth = "1"
+		width = "1.5" height = "5" depth = "1.5"
 		position = "-1 0.5 -3"
 		rotation = "0 45 0"  
 		color = "#FFFFFF"
@@ -47,6 +48,13 @@
 		radius = "1.25"
 		position = "0 1.25 -5"
 		material = "src: #earth;"
+		shadow = "cast: true; receive: true">
+	</a-sphere>
+		
+		<a-sphere
+		radius = "1.25"
+		position = "0 15 -5"
+		material = "src: #beach;"
 		shadow = "cast: true; receive: true">
 	</a-sphere>
 	
