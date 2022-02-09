@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Models on Markers</title>
+    <meta name="description" content="Models on Marders" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+
+      <a-marker preset="hiro">
+          <a-sphere radius=".5" material="opacity: 0.7;" color="red" position="0 1 0"></a-sphere>
+      </a-marker>
+        
+      <a-marker preset="kanji">  
+        <a-box material="opacity: 0.7;" color="green"></a-box>
+    </a-entity>
+      </a-marker>  
+      
+      <a-marker id="zb" type="pattern" url="markers/patt.zb">
+        <a-entity position="0 0 0" gltf-model="models/Cubone.glb" rotation="0 90 0" scale="1 1 1">
+        </a-entity>
+      </a-marker>  
+      
+     <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
