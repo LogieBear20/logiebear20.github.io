@@ -1,0 +1,66 @@
+<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+<body>
+  
+    <a-scene antialias="true">
+	
+	<a-assets>
+		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
+        <img id="dusty_lake" src="images/dusty_lake.jpg" crossorigin="anonymous" />
+        <img id="old_church" src="images/old_church.jpg" crossorigin="anonymous" />
+        <img id="marriot" src="images/marriot.jpg" crossorigin="anonymous" />
+        <img id="whisky_room" src="images/whisky_room.jpg" crossorigin="anonymous" />
+		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
+		<img id="crate" src="images/crate.jpg" crossorigin="anonymous" />
+		<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
+		<img id="hexagons" src="images/hexagons.png" crossorigin="anonymous" />
+	</a-assets>
+		
+	<a-sky 
+		color = "#FFFFFF"
+		material = "src: #sky">
+	</a-sky>
+    
+      <a-box
+        position="-2 2 -2"
+        scale=".2 .2 .2"     
+        rotation="0 45 0"
+        value="Nine O'Clock"
+        align="center"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #old_church"      
+      ></a-box>  
+     <a-box
+        position="2 2 -2"
+        scale=".2 .2 .2" 
+        rotation="0 -45 0"
+        value="Three O'Clock"
+        align="center"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #dusty_lake"      
+      ></a-box>  
+     <a-box
+        position="0 2 2.5"
+        scale=".2 .2 .2" 
+        rotation="0 180 0"
+        value="Six O'Clock"
+        align="center"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #whisky_room"     
+      ></a-box> 
+     <a-box
+        position="2 2 2.5"
+        scale=".2 .2 .2" 
+        rotation="0 180 0"
+        value="Six O'Clock"
+        align="center"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #marriot"     
+      ></a-box> 
+    <a-camera>
+        <a-cursor color=#ff77ff></a-cursor>
+    </a-camera>
+	
+</a-scene>
+    
+    
+    
+    
+    
+</body>
