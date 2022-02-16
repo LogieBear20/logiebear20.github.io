@@ -5,30 +5,30 @@
     <a-scene antialias="true">
 	
 	<a-assets>
-		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
-        <img id="dusty_lake" src="images/dusty_lake.jpg" crossorigin="anonymous" />
-        <img id="old_church" src="images/old_church.jpg" crossorigin="anonymous" />
-        <img id="marriot" src="images/marriot.jpg" crossorigin="anonymous" />
-        <img id="whisky_room" src="images/whisky_room.jpg" crossorigin="anonymous" />
-		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
-		<img id="crate" src="images/crate.jpg" crossorigin="anonymous" />
-		<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
-		<img id="hexagons" src="images/hexagons.png" crossorigin="anonymous" />
+		<img id="tokyo" src="images/japan.jpg" crossorigin="anonymous" />
+		<img id="green" src="images/Alps.jpg" crossorigin="anonymous" />
+		<img id="alien" src="images/space.jpg" crossorigin="anonymous" />
+		
+		<a-asset-item id="japan" src="models/Japanese Torii.glb"></a-asset-item>
+		<a-asset-item id="spaceship" src="models/Space Shuttle.glb"></a-asset-item>
 	</a-assets>
 		
 	<a-sky 
 		color = "#FFFFFF"
-		material = "src: #sky">
+		material = "src: #green">
 	</a-sky>
-    
-      <a-box
+	    
+    <a-entity gltf-model="#alien" position="-1 0 -.5" rotation="0 0 0" scale=".25 .25 .25" ></a-entity>
+	    
+      <a-entity gltf-model="#japan"
         position="-2 2 -2"
         scale=".2 .2 .2"     
         rotation="0 45 0"
         value="Nine O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #old_church"      
-      ></a-box>  
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #tokyo"      
+      ></a-entity>
+	    
      <a-box
         position="2 2 -2"
         scale=".2 .2 .2" 
