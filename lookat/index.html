@@ -20,22 +20,21 @@
 	    
     <a-entity gltf-model="#alien" position="-1 0 -.5" rotation="0 0 0" scale=".25 .25 .25" ></a-entity>
 	    
-      <a-entity gltf-model="#japan"
+      <a-box
         position="-2 2 -2"
         scale=".2 .2 .2"     
         rotation="0 45 0"
         value="Nine O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #tokyo"      
-      ></a-entity>
+      ></a-box>
 	    
      <a-entity gltf-model="#spaceship"
         position="2 2 -2"
-        scale=".2 .2 .2" 
+        scale=".05 .05 .05" 
         rotation="0 -45 0"
         value="Three O'Clock"
         align="center"
-	scale=".1 .1 .1"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #alien"      
       ></a-entity>
 	    
