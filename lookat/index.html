@@ -8,9 +8,14 @@
 		<img id="tokyo" src="images/japan.jpg" crossorigin="anonymous" />
 		<img id="green" src="images/Alps.jpg" crossorigin="anonymous" />
 		<img id="alien" src="images/space.jpg" crossorigin="anonymous" />
+		<img id="russia" src="images/50821710897_d57d0ccc8e_c.jpg" crossorigin="anonymous" />
+		<img id="mountain" src="images/50612371876_d298485d4b_c.jpg" crossorigin="anonymous" />
 		
 		<a-asset-item id="japan" src="models/Japanese Torii.glb"></a-asset-item>
 		<a-asset-item id="spaceship" src="models/Space Shuttle.glb"></a-asset-item>
+		<a-asset-item id="clock" src="models/Cuckoo Clock.glb"></a-asset-item>
+		<a-asset-item id="bike" src="models/Bike.glb"></a-asset-item>
+		
 	</a-assets>
 		
 	<a-sky 
@@ -28,7 +33,6 @@
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #tokyo"      
       ></a-entity>
-	    
      <a-entity gltf-model="#spaceship"
         position="2 2 -2"
         scale=".05 .05 .05" 
@@ -37,23 +41,22 @@
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #alien"      
       ></a-entity>
-	    
-     <a-box
+      <a-entity gltf-model="#bike"
         position="0 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #whisky_room"     
-      ></a-box> 
-     <a-box
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #mountain"     
+      ></a-entity>
+     <a-entity gltf-model="#clock"
         position="2 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #marriot"     
-      ></a-box> 
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #green"     
+       ></a-entity>
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
